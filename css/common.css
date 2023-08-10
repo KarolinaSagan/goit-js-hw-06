@@ -23,11 +23,12 @@ button {
   cursor: pointer;
 }
 
-.list-item {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  list-style: none;
 }
 .image {
   width: auto;

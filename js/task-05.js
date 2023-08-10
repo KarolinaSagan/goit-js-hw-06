@@ -5,6 +5,7 @@ function checkName(name) {
   name = nameInput.value;
   if (name === "") {
     nameInput.textContent = "Anonymous";
+    nameOutput.textContent = "Anonymous";
   } else {
     nameInput.textContent = name;
     nameOutput.textContent = name;
