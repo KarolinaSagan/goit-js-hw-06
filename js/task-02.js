@@ -23,4 +23,4 @@ for (let i = 0; i < ingredients.length; i++) {
 //for (let i = 0; i < ul.length; i++) {
 // list.append(ul[i]);
 //}
-list.append(ul[0], ul[1], ul[2], ul[3], ul[4], ul[5]);
+list.append(...ul);
