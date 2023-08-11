@@ -1,11 +1,11 @@
 const nameInput = document.querySelector("#name-input");
 const nameOutput = document.querySelector("#name-output");
-let name = nameInput.value;
+const name = nameOutput.textContent;
 function checkName(event) {
-  nameOutput.textContent = "Anonymous";
-  event.text = nameInput.value;
-  if (event.text != "") {
-    nameOutput.textContent = event.text;
+  if (event.currentTarget.value == "") {
+    nameOutput.textContent = name;
+  } else {
+    nameOutput.textContent = event.currentTarget.value;
   }
 }
 nameInput.addEventListener("input", checkName);
